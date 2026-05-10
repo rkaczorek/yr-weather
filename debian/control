@@ -1,0 +1,14 @@
+Source: yr-weather
+Section: python
+Priority: optional
+Maintainer: ZeroWave022
+Build-Depends: debhelper (>= 9), python3, dh-python, python3-setuptools, pybuild-plugin-pyproject
+Standards-Version: 4.5.1
+Homepage: https://github.com/ZeroWave022/yr-weather
+
+Package: python3-yr-weather
+Architecture: all
+Depends:
+ ${python3:Depends} , ${misc:Depends}
+Provides: ${python3:Provides}
+Description: Retrieve weather data from Norwegian Meteorological Institute's APIs easily.
